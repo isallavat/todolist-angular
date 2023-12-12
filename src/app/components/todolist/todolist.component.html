@@ -1,0 +1,6 @@
+<div class="TodoList">
+  <div *ngFor="let item of items; index as i" class="TodoListItem">
+    <span class="TodoListItemTitle">{{ item.title }}</span>
+    <span class="TodoListItemDelete" (click)="deleteItem(i)">&#10005;</span>
+  </div>
+</div>

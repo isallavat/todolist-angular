@@ -1,0 +1,11 @@
+<form class="TodoForm" (submit)="addItem($event)">
+  <div class="TodoFormContainer">
+    <input
+      class="TodoFormInput"
+      name="title"
+      placeholder="Title"
+      [(ngModel)]="title"
+    />
+  </div>
+  <button class="TodoFormButton" type="submit">Add</button>
+</form>
